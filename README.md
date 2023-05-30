@@ -97,6 +97,17 @@
 -   https://www.w3schools.com/python/python_reference.asp
 -   https://docs.python.org/3/tutorial/
 
+#### 4.1 Python
+- Python es un lenguaje de programaci ́on interpretado no fuertemente tipado.
+
+#### 4.2 Instalaci ́on en GNU/Linux
+- Para instalar Python 3 en cualquier distribuci ́on GNU/Linux use sus mismos repositorios. Por ejemplo en sistemas operativos compatibles con GNU/Linux Debian use alguno de los dos comandos siguientes:
+
+            ```sh
+            Listing 1: Instalar Python en GNU/Linux
+            $ sudo apt-get install python3
+            # apt-get install python3
+            ```
 -   Virtual Environment
     -   La reutilización de código(paquetes, librerias, plugins, etc.) de terceros nos permite construir software más complejo. 
     -   NodeJS usa paquetes instalados en el directorio de trabajo y no de manera global, registrando estos paquetes en sus versiones en el archivo package.json. 

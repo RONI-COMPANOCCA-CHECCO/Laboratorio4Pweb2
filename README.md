@@ -75,29 +75,24 @@
 
 ## OBJETIVOS TEMAS Y COMPETENCIAS
 
-### OBJETIVOS
+### 1. Competencias del curso
 
--   Programar usando Python.
--   Mostrar un ejemplo de separación de intereses en clases: el modelo (lista de strings) de su vista (dibujo de gráficos).
+-   General: C.c. Dise ̃na responsablemente aplicaciones web, sus componentes o procesos para satisfacer necesidades dentro de restricciones realistas: econ ́omicas, medio ambientales, sociales, pol ıticas,  ́eticas, de salud, de seguridad, manufacturaci ́on y sostenibilidad.
+-   Especıfica: C.m. Construye responsablemente soluciones con tecnolog ́ıa web siguiendo un proceso adecuado llevando a cabo las pruebas ajustada a los recursos disponibles del cliente.
+- Especıfica: C.p. Aplica de forma flexible t ́ecnicas, m ́etodos, principios, normas, est ́andares y herramientas del desarrollo web necesarias para la construcci ́on de aplicaciones web e implementaci ́on de estos sistemas en una organizaci ́on.
 
-### TEMAS
--   Listas
--   Ciclos
--   Programación orientada a objetos
--   ¿Programación funcional?
+### 2. Resultado del estudiante
+-   La capacidad de crear, seleccionar y utilizar t ́ecnicas, habilidades, recursos y herramientas modernas de ingenier ́ıa y tecnolog ́ıas de la informaci ́on, incluyendo la predicci ́on y el modelamiento, con una comprensi ́on de las limitaciones.
 
-<details>
-<summary>COMPETENCIAS</summary>
+### 3. Equipos, materiales y temas
+- Sistema Operativo (GNU/Linux de preferencia).
+- GNU Vim.
+- Python 3.
+- Git.
+- Cuenta en Github con el correo institucional.
+- Entorno virtual.
 
-- C.c Diseña responsablemente sistemas, componentes o procesos para satisfacer necesidades dentro de restricciones realistas: económicas, medio ambientales, sociales, políticas, éticas, de salud, de seguridad, manufacturación y sostenibilidad.
-- C.m Construye responsablemente soluciones siguiendo un proceso adecuado llevando a cabo las pruebas ajustada a los recursos disponibles del cliente.
-- C.p Aplica de forma flexible técnicas, métodos, principios, normas, estándares y herramientas de ingeniería necesarias para la construcción de software e implementación de sistemas de información.
-
-</details>
-
-## CONTENIDO DE LA GUÍA
-
-### MARCO CONCEPTUAL
+### 4. MARCO CONCEPTUAL
 
 -   https://www.w3schools.com/python/python_reference.asp
 -   https://docs.python.org/3/tutorial/

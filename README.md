@@ -190,10 +190,10 @@
 <a href="https://imgbb.com/"><img src="https://i.ibb.co/2y394Jk/aistall-1.jpg" alt="aistall-1" border="0"></a>
 
 ***Corriendo nuestro primer ejemplo python ¡Hola Mundo!***      
-<a href="https://ibb.co/BqBXTn1"><img src="https://i.ibb.co/vZk7LXt/python-1.jpg" alt="python-1" border="0"></a>
+<a href="https://ibb.co/qkP60Lz"><img src="https://i.ibb.co/Ln2KQDM/python-2.jpg" alt="python-2" border="0"></a>
 
 ***Commit para agregar el ejemplo python a nuestro repositorio remoto***
-
+<a href="https://ibb.co/HNZB3MT"><img src="https://i.ibb.co/28JWHL3/python-3.jpg" alt="python-3" border="0"></a>
 
 ### 4.8 Comentarios en Python
 

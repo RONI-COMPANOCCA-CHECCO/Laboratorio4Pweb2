@@ -125,7 +125,7 @@
 
             
                          Listing 2: Instalar Python en Mac
-            #
+            
             $ brew install python
             
 
@@ -234,7 +234,7 @@
             return True
         
 
-- Pruebe el m ́etodo esEscalar()
+- Pruebe el método esEscalar()
 
         
                      Listing 19: testEsEscalar.py
@@ -364,7 +364,7 @@
 #
 ### 8. Rúbrica
 
-><a href="https://ibb.co/j5zftCx"><img src="https://i.ibb.co/X4DLHnd/caballo-8.jpg" alt="caballo-8" border="0"></a>
+<a href="https://ibb.co/j5zftCx"><img src="https://i.ibb.co/X4DLHnd/caballo-8.jpg" alt="caballo-8" border="0"></a>
 
 ### 9. Referencias
 
@@ -412,4 +412,4 @@
 
 - Observaciones que se consideran en la calificación.
 
-><a href="https://ibb.co/qWsLL9C"><img src="https://i.ibb.co/KLqcc7D/caballo-9.jpg" alt="caballo-9" border="0"></a>
+<a href="https://ibb.co/qWsLL9C"><img src="https://i.ibb.co/KLqcc7D/caballo-9.jpg" alt="caballo-9" border="0"></a>

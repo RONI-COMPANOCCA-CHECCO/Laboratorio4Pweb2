@@ -178,6 +178,82 @@
             
             $ python3 helloworld.py
             
+#### 4.8 Comentarios en Python
+
+- Los comentarios en Python sólo se aplican por cada línea.
+- Pero usted puede utilizar v ́arias t ́ecnicas para comentar en el editor Vim.
+
+
+                         Listing 9: Comentar rango de líneas 5-10
+
+            :3,5s/^/#
+
+
+                         Listing 10: Comentar todas las líneas que tengan la palabra print
+
+            :g/print/s/^/#
+
+#### 4.9 Virtual Environment
+
+- La reutilización de código fuente (paquetes, librerias, plugins, etc.) de terceros nos permite construir software más complejo, sobre todo con menos tiempo.
+- En NodeJS se usaban paquetes instalados en el directorio de trabajo y no de manera global, registrando estos paquetes en sus versiones en el archivo package.json.
+- Por eso este modo de trabajo nos permite tener distintos proyectos con distintas bibliotecas, de distintas versiones, en la misma m ́aquina, sin que existan conflictos.
+- Para compartir el proyecto se debe compartir el archivo package.json y luego llamar a ”npm install”para instalar las bibliotecas adecuadas para el proyecto.
+- Java usa ant y maven, junto con archivos xml para realizar estas tareas.
+- Python tiene virtualenv, para crear este espacio de trabajo.
+- Python utiliza el manejador de paquetes pip.
+
+#### 4.10 Pip
+
+- Instalemos pip, una herramienta que instalará y administrará los paquetes de programación que queramos usar en nuestros proyectos de desarrollo.
+
+
+                         Listing 11: Instalación de pip
+
+            $ sudo apt-get install -y python3-pip
+
+#### 4.11 Garantizando configuraci ́on para entorno virtual
+
+- Paquetes y herramientas de desarrollo más para instalar para garantizar que tengamos una configuración sólida para nuestro entorno de programación.
+
+
+                         Listing 12: Instalaci ́ones previas para entorno virtual
+
+            $ sudo apt-get install build-essential libssl-dev libffi-dev python3-dev
+
+#### 4.12 Configurando entorno virtual
+
+- Los entornos virtuales permiten tener un espacio aislado en los proyectos Python
+- Garantizando que cada proyecto pueda tener su propio conjunto de dependencias que no interrumpir ́an a otros proyectos.
+- Manejando diferentes versiones de los paquetes. Esto es especialmente importante cuando se trabaja con paquetes de terceros.
+- Puede varios entornos de programación.
+- Cada entorno es un directorio en la que se ubicaran sus scripts.
+- Usaremos el módulo venv , que es parte de la biblioteca est ́andar de Python.
+- Instalemos venv escribiendo:
+
+
+                         Listing 13: Instalación del entorno virtual
+
+            $ sudo apt install -y python3-venv
+
+#### 4.13 Crear un directorio para entorno virtual
+
+- Para crear un ambiente elija en qu ́e directorio se va trabajar con entorno virtual.
+
+
+                         Listing 14: Creando directorio para entorno virtual
+
+            $ mkdir -p $HOME/rescobedoq/pw2-lab-c-23a/lab04/exercises/my_env
+
+#### 4.14 Crear entorno virtual en un directorio
+
+- En el directorio crea un entorno virtual ejecutando el siguiente comando:
+
+
+                         Listing 15: Creando entorno virtual
+            
+            $ cd $HOME/rescobedoq/pw2-lab-c-23a/lab04/exercises/my_env
+            $ virtualenv -p python3 .
 
 #### 4.15 Estructura de un entorno virtual
 
@@ -295,7 +371,7 @@
 - La parte gráfica ya est ́a programada, usted sólo tendr ́a que concentrarse en las estructuras de datos subyacentes.
 - Con el código proporcionado usted dispondrá de varios objetos de tipo Picture para poder realizar su tarea:
 
-><a href="https://imgbb.com/"><img src="https://i.ibb.co/svxt2F8/caballo-1.jpg" alt="caballo-1" border="0"></a>
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/svxt2F8/caballo-1.jpg" alt="caballo-1" border="0"></a>
 
 - Estos objetos estar ́an disponibles importando la biblioteca: chessPictures y estar ́an internamente representados con arreglos de strings que podr ́a revisar en el archivo pieces.py
 - La clase Picture tiene un s ́olo atributo: el arreglo de strings img, el cual contendr ́a la representaci ́on en caracteres de la figura que se desea dibujar.
@@ -335,7 +411,7 @@
     Hello from the pygame community. https://www.pygame.org/contribute.html
     >>> draw(rock)
 
-><a href="https://imgbb.com/"><img src="https://i.ibb.co/WspwXzH/caballo-2.jpg" alt="caballo-2" border="0"></a>
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/WspwXzH/caballo-2.jpg" alt="caballo-2" border="0"></a>
 
 - Ejercicios:
       • Para resolver los siguientes ejercicios s ́olo est ́a permitido usar ciclos, condicionales, definici ́on de listas por comprensi ́on, sublistas, map, join, (+), lambda, zip, append, pop, range.
@@ -343,11 +419,11 @@
       • Usando  ́unicamente los m ́etodos de los objetos de la clase Picture dibuje las siguientes figuras (invoque a draw):
 - Pregunta: Explique el directorio pycache. 
 
-><a href="https://ibb.co/N7cZ0Y2"><img src="https://i.ibb.co/1bF8C2G/caballo-3.jpg" alt="caballo-3" border="0"></a>
-><a href="https://ibb.co/TPMbgbX"><img src="https://i.ibb.co/P1G969p/caballo-4.jpg" alt="caballo-4" border="0"></a>
-><a href="https://ibb.co/v1mVJY2"><img src="https://i.ibb.co/0qZmftP/caballo-5.jpg" alt="caballo-5" border="0"></a>
-><a href="https://ibb.co/vYwhwrW"><img src="https://i.ibb.co/TLv1vnG/caballo-6.jpg" alt="caballo-6" border="0"></a>
-><a href="https://ibb.co/ynvsYgP"><img src="https://i.ibb.co/WW8KPB5/caballo-7.jpg" alt="caballo-7" border="0"></a>
+<a href="https://ibb.co/N7cZ0Y2"><img src="https://i.ibb.co/1bF8C2G/caballo-3.jpg" alt="caballo-3" border="0"></a>
+<a href="https://ibb.co/TPMbgbX"><img src="https://i.ibb.co/P1G969p/caballo-4.jpg" alt="caballo-4" border="0"></a>
+<a href="https://ibb.co/v1mVJY2"><img src="https://i.ibb.co/0qZmftP/caballo-5.jpg" alt="caballo-5" border="0"></a>
+<a href="https://ibb.co/vYwhwrW"><img src="https://i.ibb.co/TLv1vnG/caballo-6.jpg" alt="caballo-6" border="0"></a>
+<a href="https://ibb.co/ynvsYgP"><img src="https://i.ibb.co/WW8KPB5/caballo-7.jpg" alt="caballo-7" border="0"></a>
 
 ### 7. Entregables
 - En el informe siempre se debe agregar un enlace al directorio de su laboratorio en su repositorio Github privado donde se vea est ́e el c ́odigo fuente.

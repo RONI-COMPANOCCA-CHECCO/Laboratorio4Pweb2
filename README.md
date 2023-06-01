@@ -102,65 +102,60 @@
 
 #### 4.2 Instalaci ́on en GNU/Linux
 - Para instalar Python 3 en cualquier distribuci ́on GNU/Linux use sus mismos repositorios. Por ejemplo en sistemas operativos compatibles con GNU/Linux Debian use alguno de los dos comandos siguientes:
-
             ```sh
-            Listing 1: Instalar Python en GNU/Linux
+                         Listing 1: Instalar Python en GNU/Linux
             $ sudo apt-get install python3
             # apt-get install python3
             ```
--   Virtual Environment
-    -   La reutilización de código(paquetes, librerias, plugins, etc.) de terceros nos permite construir software más complejo. 
-    -   NodeJS usa paquetes instalados en el directorio de trabajo y no de manera global, registrando estos paquetes en sus versiones en el archivo package.json. 
-    -   Por eso este modo de trabajo nos permite tener distintos proyectos con distintas bibliotecas, de distintas versiones, en la misma máquina, sin que existan conflictos. 
-    -   Para compartir el proyecto se debe compartir el archivo package.json y luego llamar a "npm install" para instalar las bibliotecas adecuadas para el proyecto.
-    -   Java usa ant y maven, junto con archivos xml para realizar estas tareas.
-    -   Python tiene virtualenv, para crear este espacio de trabajo.
-    -   Python utiliza el manejador de paquetes pip.
+#### 4.3 Instalaci ́on en MS Windows
+- Para descarga en sistemas MS Windows https://www.python.org/downloads/windows/
+- Descargar e instalar en sistemas operativos MS Windows, por lo general es muy sencillo. Adem ́as si usted es un usuario nativo de windows este proceso ser ́a casi intuitivo. No tenga miedo de instalar estos programas todo es software libre, asi que no necesitar ́a parches o cracks.
 
--   Utilizar Python
-    -   Para un instalación local en sistemas operativos MS Windows utilice: https://www.python.org/downloads/windows/
-    -   Tambien ud puede probar código en herramientas online: https://www.programiz.com/python-programming/online-compiler/
+#### 4.4 Instalaci ́on en MacOS
+- Para instalar Python 3 en sistemas MacOS puede descargar el instalador desde urlhttps://www.python.org/downloads/macos/ o usar brew:
+            ```sh
+                         Listing 2: Instalar Python en Mac
+            $ brew install python
+            ```
+#### 4.5 Comprobar versi ́on
+- Debe comprobar que la instalaci ́on y el reconocimiento del compilador ya estan presentes en su sistema operativo:
+            ```sh
+                         Listing 3: Verificando versi ́on de Python
+            $ python3 --version
+            ```
+#### 4.6 Directorio de trabajo
+- Cree el directorio para estudiar ejercicios para este laboratorio.
+- Luego, dir ́ıjase a este directorio y desarrolle diferentes ejercicicios de entrenamiento.
+            ```sh
+                         Listing 4: Creando directorio para ejercicios de este laboratorio
+            $ mkdir -p $HOME/rescobedoq/pw2-lab-c-23a/lab04/exercises
+            ```
+#
+            ```sh
+                         Listing 5: Dirij ́ıendonos al directorio de ejercicios
+            $ cd $HOME/rescobedoq/pw2-lab-c-23a/lab04/exercises
+            ```
+#### 4.7 Hola mundo
+- Cree su primer ejercicio helloworld.py
+            ```sh
+                         Listing 6: Creando el archivo helloworld.py
+            $ vim helloworld.py
+            ```
+#
+            ```sh
+                         Listing 7: helloworld.py
+            print("Hello World!");
+            ```
 
-    -   Python en Debian GNU/Linux:
-        -   Debian Linux viene con Python 3 y Python 2 preinstalados.
+- Para ejecutar su script helloworld.py ejecute el siguiente comando:
             ```sh
-            python3 --version
-            Python 3.9.2
+                         Listing 8: Ejecutando el script helloworld.py
+            $ python3 helloworld.py
             ```
-        -   Instalemos pip, una herramienta que instalará y administrará los paquetes de programación que queramos usar en nuestros proyectos de desarrollo. 
-            ```sh
-            sudo apt-get install -y python3-pip
-            ```
-        -   Paquetes y herramientas de desarrollo más para instalar para garantizar que tengamos una configuración sólida para nuestro entorno de programación:
-            ```sh
-            sudo apt-get install build-essential libssl-dev libffi-dev python3-dev
-            ```
-    -   Configurar un entorno virtual:
-        - Los entornos virtuales permiten tener un espacio aislado en los proyectos Python
-        -   Garantizando que cada proyecto pueda tener su propio conjunto de dependencias que no interrumpirán a otros proyectos.
-        -   Manejando diferentes versiones de los paquetes. Esto es especialmente importante cuando se trabaja con paquetes de terceros.
-        -   Puede varios entornos de programación. 
-        -   Cada entorno es un directorio en la que se ubicaran sus scripts.
-        -   Usaremos el módulo venv , que es parte de la biblioteca estándar de Python.
-        -   Instalemos venv escribiendo:
-            ```sh
-            sudo apt install -y python3-venv
-            ```
-        -   Para crear un ambiente elija en qué directorio.
-            ```sh
-            mkdir -p ~/unsa/pw2/labs/lab04/my_env
-            cd ~/unsa/pw2/labs/lab04/my_env
-            ```
-        -   En el directorio crea un entorno virtual ejecutando el siguiente comando:
-            ```sh
-            virtualenv -p python3 .
-            mkdir -p ~/unsa/pw2/labs/lab04/my_env/src
-            cd ~/unsa/pw2/labs/lab04/my_env/src
-            ```
-        -   Esto es lo que sucedio:
-            ```sh
-            tree -L 2 ../
-            ```
+#### 4.15 Estructura de un entorno virtual
+- Estudie la estructura del entorno virtual.
+- Dentro del directorio para el entorno virtual se debi ́o crear un subdirectorio src/ con el siguiente contenido:
+    
             ```sh
             .
             ├── bin
@@ -187,42 +182,15 @@
             ├── pyvenv.cfg
             └── src
             ```
-        -   Ejecute el script de activación para activar el entorno virtual:
-            ```sh
-            source ../bin/activate
-            ```
-            ```sh
-            (my_env) user@localhost:$
-            ```
+### 5. Ejercicios
 
-        -   Cree el "Hola Mundo" en su entorno de programación:
-            ```sh
-            vim hello.py
-            ```
-            ```sh
-            print("Hello, World!")
-            ```
-            ```sh
-            python3 hello.py
-            ```
-        -   Para salir del entorno virtual:
-            ```sh
-            deactivate
-            ```
+#### 5.1 Matriz escalar
 
-## EJERCICIO RESUELTO POR EL DOCENTE
+- Ejercicios sobre matrices de tama ̃no NxN.
+- Determine si una matriz es escalar:
 
--   Active su entorno virtual
-    ```sh
-    source ../bin/activate
-    ```
--   Ejercicios sobre matrices de tamaño NxN:
-
-    -   Determine si una matriz es escalar:
         ```sh
-        vim esEscalar.py
-        ```
-        ```sh
+                     Listing 18: esEscalar.py
         def esEscalar(m):
             d = m[0][0]
             for i in range(len(m)):
@@ -236,10 +204,11 @@
                         return False
             return True
         ```
+
+- Pruebe el m ́etodo esEscalar()
+
         ```sh
-        vim test_esEscalar.py
-        ```
-        ```sh
+                     Listing 19: testEsEscalar.py
         import esEscalar as fu
 
         def prueba(M):
@@ -254,21 +223,22 @@
 
         prueba(Z)
         ```
+#### 5.2 Matriz unitaria
 
-    -   Determine si una matriz es unitaria:
-         ```sh
-        vim esUnitaria.py
-        ```
+- Ejercicios sobre matrices de tama ̃no NxN.
+- Determine si una matriz es unitaria:
+
         ```sh
+                     Listing 20: esUnitaria.py
         import esEscalar as fu
 
         def esUnitaria(m):
             return m[0][0] == 1 and fu.esEscalar(m)
         ```
+- Pruebe el m ́etodo esUnitaria()
+
         ```sh
-        vim test_esUnitaria.py
-        ```
-        ```sh
+                     Listing 21: testEsUnitaria.py
         import esUnitaria as fu
 
         def prueba(M):
@@ -284,33 +254,32 @@
 
         prueba(Z)
         ```
+### 6. Tarea
 
-#
+- En esta tarea usted pondr ́a en pr ́actica sus conocimientos de programaci ́on en Python para dibujar un tablero de Ajedrez.
+- La parte gr ́afica ya est ́a programada, usted s ́olo tendr ́a que concentrarse en las estructuras de datos subyacentes.
+- Con el c ́odigo proporcionado usted dispondr ́a de varios objetos de tipo Picture para poder realizar su tarea:
 
-## EJERCICIOS PROPUESTOS
--   En esta tarea usted pondrá en práctica sus conocimientos de programación en Python para dibujar un tablero de Ajedrez. 
--   La parte gráfica ya está programada, usted sólo tendrá que concentrarse en las estructuras de datos subyacentes.
--   Con el código proporcionado usted dispondrá de varios objetos de tipo Picture para poder realizar su tarea:
-    ![Fichas de ajedrez](imagenes/picture.png)
--   Estos objetos estarán disponibles importando la biblioteca: [chessPictures](Tarea-del-Ajedrez/chessPictures.py) y estarán internamente representados con arreglos de strings que podrá revisar en el archivo [pieces.py](Tarea-del-Ajedrez/pieces.py)
--   La clase [Picture](Tarea-del-Ajedrez/picture.py) tiene un sólo atributo: el arreglo de strings img, el cual contendrá la representación en caracteres de la figura que se desea dibujar. 
--   La clase [Picture](Tarea-del-Ajedrez/picture.py) ya cuenta con una función implementada, no debe modificarla, pero si puede usarla para implementar sus otras funciones:
-    -   _invColor: recibe un color como un caracter de texto y devuelve su color negativo, también como texto, deberá revisar el archivo [colors.py](Tarea-del-Ajedrez/colors.py) para conocer los valores negativos de cada caracter.
 
--   La clase [Picture](Tarea-del-Ajedrez/picture.py) contará además con varios métodos que usted deberá implementar:
-    1.  verticalMirror: Devuelve el espejo vertical de la imagen
-    2.  horizontalMirror: Devuelve el espejo horizontal de la imagen
-    3.  negative: Devuelve un negativo de la imagen
-    4.  join: Devuelve una nueva figura poniendo la figura del argumento al lado derecho de la figura actual
-    5.  up: Devuelve una nueva figura poniendo la figura recibida como argumento, encima de la figura actual
-    6.  under: Devuelve una nueva figura poniendo la figura recibida como argumento, sobre la figura actual
-    7.  horizontalRepeat, Devuelve una nueva figura repitiendo la figura actual al costado la cantidad de veces que indique el valor de n
-    8.  verticalRepeat Devuelve una nueva figura repitiendo la figura actual debajo, la cantidad de veces que indique el valor de n
+- Estos objetos estar ́an disponibles importando la biblioteca: chessPictures y estar ́an internamente representados con arreglos de strings que podr ́a revisar en el archivo pieces.py
+- La clase Picture tiene un s ́olo atributo: el arreglo de strings img, el cual contendr ́a la representaci ́on en caracteres de la figura que se desea dibujar.
+- La clase Picture ya cuenta con una funci ́on implementada, no debe modificarla, pero si puede usarla para implementar sus otras funciones:
+- invColor: recibe un color como un caracter de texto y devuelve su color negativo, tambi ́en como texto, deber ́a revisar el archivo colors.py para conocer los valores negativos de cada caracter.
+- La clase Picture contar ́a adem ́as con varios m ́etodos que usted deber ́a implementar:
+      • verticalMirror: Devuelve el espejo vertical de la imagen
+      • horizontalMirror: Devuelve el espejo horizontal de la imagen
+      • negative: Devuelve un negativo de la imagen
+      • join: Devuelve una nueva figura poniendo la figura del argumento al lado derecho de la figura actual
+      • up: Devuelve una nueva figura poniendo la figura recibida como argumento, encima de la figura actual
+      • under: Devuelve una nueva figura poniendo la figura recibida como argumento, sobre la figura actual
+      • horizontalRepeat: Devuelve una nueva figura repitiendo la figura actual al costado la cantidad de veces que indique el valor de n
+      • verticalRepeat: Devuelve una nueva figura repitiendo la figura actual debajo, la cantidad de veces que indique el valor de n
+- Tenga en cuenta que para implementar todos estos m ́etodos, s ́olo deber ́a trabajar sobre la representaci ́on interna de un Picture, es decir su atributo img.
+- Para dibujar una objeto Picture bastar ́a importar el m ́etodo draw de la biblioteca interpreter y usarlo de la siguiente manera:
 
--   Tenga en cuenta que para implementar todos estos métodos, sólo deberá trabajar sobre la representación interna de un Picture, es decir su atributo img.
-
--   Para dibujar una objeto Picture bastará importar el método draw de la biblioteca interpreter y usarlo de la siguiente manera:
     ```sh
+             Listing 22: Importando en m ́etodo draw() de interpreter
+#
     $ python3
     Python 3.9.2 (default, Feb 28 2021, 17:03:44) 
     [GCC 10.2.1 20210110] on linux
@@ -323,39 +292,24 @@
     Hello from the pygame community. https://www.pygame.org/contribute.html
     >>> draw(rock)
     ```
-    ![PyGame](imagenes/pygame_rock.png)
 
--   Ejercicios:
+### 7. Entregables
+- En el informe siempre se debe agregar un enlace al directorio de su laboratorio en su repositorio Github privado donde se vea est ́e el c ́odigo fuente.
+- No olvide que el profesor debe ser siempre colaborador a su repositorio (Usuario del profesor @rescobedoq).
+- Para ser considerado con la calificaci ́on de m ́axima nota elab ́orelo en Latex.
+- Usted debe describir los commits m ́as importantes que marcaron hitos en su trabajo, adjutando capturas de pantalla, del commit, del c ́odigo fuente, de sus ejecuciones y pruebas.
+- En el informe siempre se debe explicar las im ́agenes (c ́odigo fuente, capturas de pantalla, commits, ejecuciones, pruebas, etc.) con descripciones puntuales pero precisas.
+#### Cuestionario
 
-    -   Para resolver los siguientes ejercicios sólo está permitido usar ciclos, condicionales, definición de listas por comprensión, sublistas, map, join, (+), lambda, zip, append, pop, range.
-
-        1.  Implemente los métodos de la clase Picture. Se recomienda que implemente la clase picture por etapas, probando realizar los dibujos que se muestran en la siguiente preguntas.
-        2.  Usando únicamente los métodos de los objetos de la clase Picture dibuje las siguientes figuras (invoque a draw):
-
-            *    (a) ![(a)](imagenes/ejercicio_02_a.png)
-
-            *    (b) ![(b)](imagenes/ejercicio_02_b.png)
-
-            *    (c) ![(c)](imagenes/ejercicio_02_c.png)
-
-            *    (d) ![(d)](imagenes/ejercicio_02_d.png)
-
-            *    (e) ![(e)](imagenes/ejercicio_02_e.png)
-
-            *    (f) ![(f)](imagenes/ejercicio_02_f.png)
-
-            *    (g) ![(g)](imagenes/ejercicio_02_g.png)
-
-#
-
-## CUESTIONARIO
 -   ¿Qué son los archivos *.pyc?
 -   ¿Para qué sirve el directorio __pycache__?
 -   ¿Cuáles son los usos y lo que representa el subguión en Python?
 
 #
+### 8. R ́ubrica
 
-## REFERENCIAS
+### 9. Referencias
+
 -   https://www.w3schools.com/python/python_reference.asp
 -   https://docs.python.org/3/tutorial/
 
@@ -395,3 +349,5 @@
 [![License][license]][license-file]
 [![Downloads][downloads]][releases]
 [![Last Commit][last-commit]][releases]
+
+### 10. Observaciones

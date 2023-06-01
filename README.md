@@ -75,16 +75,18 @@
 
 ## OBJETIVOS TEMAS Y COMPETENCIAS
 
-### 1. Competencias del curso
+## 1. Competencias del curso
 
 -   General: C.c. Dise ̃na responsablemente aplicaciones web, sus componentes o procesos para satisfacer necesidades dentro de restricciones realistas: econ ́omicas, medio ambientales, sociales, pol ıticas,  ́eticas, de salud, de seguridad, manufacturaci ́on y sostenibilidad.
 -   Especıfica: C.m. Construye responsablemente soluciones con tecnolog ́ıa web siguiendo un proceso adecuado llevando a cabo las pruebas ajustada a los recursos disponibles del cliente.
 - Especıfica: C.p. Aplica de forma flexible t ́ecnicas, m ́etodos, principios, normas, est ́andares y herramientas del desarrollo web necesarias para la construcci ́on de aplicaciones web e implementaci ́on de estos sistemas en una organizaci ́on.
 
-### 2. Resultado del estudiante
+## 2. Resultado del estudiante
+
 -   La capacidad de crear, seleccionar y utilizar t ́ecnicas, habilidades, recursos y herramientas modernas de ingenier ́ıa y tecnolog ́ıas de la informaci ́on, incluyendo la predicci ́on y el modelamiento, con una comprensi ́on de las limitaciones.
 
-### 3. Equipos, materiales y temas
+## 3. Equipos, materiales y temas
+
 - Sistema Operativo (GNU/Linux de preferencia).
 - GNU Vim.
 - Python 3.
@@ -92,67 +94,93 @@
 - Cuenta en Github con el correo institucional.
 - Entorno virtual.
 
-### 4. MARCO CONCEPTUAL
+## 4. MARCO CONCEPTUAL
 
 -   https://www.w3schools.com/python/python_reference.asp
 -   https://docs.python.org/3/tutorial/
 
 #### 4.1 Python
+
 - Python es un lenguaje de programaci ́on interpretado no fuertemente tipado.
 
 #### 4.2 Instalaci ́on en GNU/Linux
+
 - Para instalar Python 3 en cualquier distribuci ́on GNU/Linux use sus mismos repositorios. Por ejemplo en sistemas operativos compatibles con GNU/Linux Debian use alguno de los dos comandos siguientes:
+
             ```sh
                          Listing 1: Instalar Python en GNU/Linux
+            #
             $ sudo apt-get install python3
             # apt-get install python3
             ```
+
 #### 4.3 Instalaci ́on en MS Windows
+
 - Para descarga en sistemas MS Windows https://www.python.org/downloads/windows/
 - Descargar e instalar en sistemas operativos MS Windows, por lo general es muy sencillo. Adem ́as si usted es un usuario nativo de windows este proceso ser ́a casi intuitivo. No tenga miedo de instalar estos programas todo es software libre, asi que no necesitar ́a parches o cracks.
 
 #### 4.4 Instalaci ́on en MacOS
+
 - Para instalar Python 3 en sistemas MacOS puede descargar el instalador desde urlhttps://www.python.org/downloads/macos/ o usar brew:
+
             ```sh
                          Listing 2: Instalar Python en Mac
+            #
             $ brew install python
             ```
+
 #### 4.5 Comprobar versi ́on
+
 - Debe comprobar que la instalaci ́on y el reconocimiento del compilador ya estan presentes en su sistema operativo:
+
             ```sh
                          Listing 3: Verificando versi ́on de Python
+            #
             $ python3 --version
             ```
 #### 4.6 Directorio de trabajo
+
 - Cree el directorio para estudiar ejercicios para este laboratorio.
 - Luego, dir ́ıjase a este directorio y desarrolle diferentes ejercicicios de entrenamiento.
+
             ```sh
                          Listing 4: Creando directorio para ejercicios de este laboratorio
+            #
             $ mkdir -p $HOME/rescobedoq/pw2-lab-c-23a/lab04/exercises
             ```
 #
             ```sh
                          Listing 5: Dirij ́ıendonos al directorio de ejercicios
+            #
             $ cd $HOME/rescobedoq/pw2-lab-c-23a/lab04/exercises
             ```
+
 #### 4.7 Hola mundo
+
 - Cree su primer ejercicio helloworld.py
+
             ```sh
                          Listing 6: Creando el archivo helloworld.py
+            #
             $ vim helloworld.py
             ```
 #
             ```sh
                          Listing 7: helloworld.py
+            #
             print("Hello World!");
             ```
 
 - Para ejecutar su script helloworld.py ejecute el siguiente comando:
+
             ```sh
                          Listing 8: Ejecutando el script helloworld.py
+            #
             $ python3 helloworld.py
             ```
+
 #### 4.15 Estructura de un entorno virtual
+
 - Estudie la estructura del entorno virtual.
 - Dentro del directorio para el entorno virtual se debi ́o crear un subdirectorio src/ con el siguiente contenido:
     
@@ -191,6 +219,7 @@
 
         ```sh
                      Listing 18: esEscalar.py
+        #
         def esEscalar(m):
             d = m[0][0]
             for i in range(len(m)):
@@ -209,6 +238,7 @@
 
         ```sh
                      Listing 19: testEsEscalar.py
+        #
         import esEscalar as fu
 
         def prueba(M):
@@ -223,6 +253,7 @@
 
         prueba(Z)
         ```
+
 #### 5.2 Matriz unitaria
 
 - Ejercicios sobre matrices de tama ̃no NxN.
@@ -230,15 +261,18 @@
 
         ```sh
                      Listing 20: esUnitaria.py
+        #
         import esEscalar as fu
 
         def esUnitaria(m):
             return m[0][0] == 1 and fu.esEscalar(m)
         ```
+
 - Pruebe el m ́etodo esUnitaria()
 
         ```sh
                      Listing 21: testEsUnitaria.py
+        #
         import esUnitaria as fu
 
         def prueba(M):
@@ -254,6 +288,7 @@
 
         prueba(Z)
         ```
+
 ### 6. Tarea
 
 - En esta tarea usted pondr ́a en pr ́actica sus conocimientos de programaci ́on en Python para dibujar un tablero de Ajedrez.
@@ -266,20 +301,29 @@
 - La clase Picture ya cuenta con una funci ́on implementada, no debe modificarla, pero si puede usarla para implementar sus otras funciones:
 - invColor: recibe un color como un caracter de texto y devuelve su color negativo, tambi ́en como texto, deber ́a revisar el archivo colors.py para conocer los valores negativos de cada caracter.
 - La clase Picture contar ́a adem ́as con varios m ́etodos que usted deber ́a implementar:
+
       • verticalMirror: Devuelve el espejo vertical de la imagen
+
       • horizontalMirror: Devuelve el espejo horizontal de la imagen
+
       • negative: Devuelve un negativo de la imagen
+
       • join: Devuelve una nueva figura poniendo la figura del argumento al lado derecho de la figura actual
+
       • up: Devuelve una nueva figura poniendo la figura recibida como argumento, encima de la figura actual
+
       • under: Devuelve una nueva figura poniendo la figura recibida como argumento, sobre la figura actual
+
       • horizontalRepeat: Devuelve una nueva figura repitiendo la figura actual al costado la cantidad de veces que indique el valor de n
+
       • verticalRepeat: Devuelve una nueva figura repitiendo la figura actual debajo, la cantidad de veces que indique el valor de n
+
 - Tenga en cuenta que para implementar todos estos m ́etodos, s ́olo deber ́a trabajar sobre la representaci ́on interna de un Picture, es decir su atributo img.
 - Para dibujar una objeto Picture bastar ́a importar el m ́etodo draw de la biblioteca interpreter y usarlo de la siguiente manera:
 
     ```sh
              Listing 22: Importando en m ́etodo draw() de interpreter
-#
+    #
     $ python3
     Python 3.9.2 (default, Feb 28 2021, 17:03:44) 
     [GCC 10.2.1 20210110] on linux
@@ -306,7 +350,7 @@
 -   ¿Cuáles son los usos y lo que representa el subguión en Python?
 
 #
-### 8. R ́ubrica
+### 8. Rúbrica
 
 ### 9. Referencias
 

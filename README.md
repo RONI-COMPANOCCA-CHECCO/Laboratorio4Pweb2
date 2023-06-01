@@ -292,9 +292,10 @@
 ### 6. Tarea
 
 - En esta tarea usted pondr ́a en pr ́actica sus conocimientos de programaci ́on en Python para dibujar un tablero de Ajedrez.
-- La parte gr ́afica ya est ́a programada, usted s ́olo tendr ́a que concentrarse en las estructuras de datos subyacentes.
-- Con el c ́odigo proporcionado usted dispondr ́a de varios objetos de tipo Picture para poder realizar su tarea:
+- La parte gráfica ya est ́a programada, usted sólo tendr ́a que concentrarse en las estructuras de datos subyacentes.
+- Con el código proporcionado usted dispondrá de varios objetos de tipo Picture para poder realizar su tarea:
 
+><a href="https://imgbb.com/"><img src="https://i.ibb.co/svxt2F8/caballo-1.jpg" alt="caballo-1" border="0"></a>
 
 - Estos objetos estar ́an disponibles importando la biblioteca: chessPictures y estar ́an internamente representados con arreglos de strings que podr ́a revisar en el archivo pieces.py
 - La clase Picture tiene un s ́olo atributo: el arreglo de strings img, el cual contendr ́a la representaci ́on en caracteres de la figura que se desea dibujar.
@@ -321,8 +322,7 @@
 - Tenga en cuenta que para implementar todos estos m ́etodos, s ́olo deber ́a trabajar sobre la representaci ́on interna de un Picture, es decir su atributo img.
 - Para dibujar una objeto Picture bastar ́a importar el m ́etodo draw de la biblioteca interpreter y usarlo de la siguiente manera:
 
-    
-             Listing 22: Importando en m ́etodo draw() de interpreter
+***Listing 22: Importando en método draw() de interpreter***
 #
     $ python3
     Python 3.9.2 (default, Feb 28 2021, 17:03:44) 
@@ -334,6 +334,20 @@
     pygame 1.9.6
     Hello from the pygame community. https://www.pygame.org/contribute.html
     >>> draw(rock)
+
+><a href="https://imgbb.com/"><img src="https://i.ibb.co/WspwXzH/caballo-2.jpg" alt="caballo-2" border="0"></a>
+
+- Ejercicios:
+      • Para resolver los siguientes ejercicios s ́olo est ́a permitido usar ciclos, condicionales, definici ́on de listas por comprensi ́on, sublistas, map, join, (+), lambda, zip, append, pop, range.
+      • Implemente los m ́etodos de la clase Picture. Se recomienda que implemente la clase picture por etapas, probando realizar los dibujos que se muestran en la siguiente preguntas.
+      • Usando  ́unicamente los m ́etodos de los objetos de la clase Picture dibuje las siguientes figuras (invoque a draw):
+- Pregunta: Explique el directorio pycache. 
+
+><a href="https://ibb.co/N7cZ0Y2"><img src="https://i.ibb.co/1bF8C2G/caballo-3.jpg" alt="caballo-3" border="0"></a>
+><a href="https://ibb.co/TPMbgbX"><img src="https://i.ibb.co/P1G969p/caballo-4.jpg" alt="caballo-4" border="0"></a>
+><a href="https://ibb.co/v1mVJY2"><img src="https://i.ibb.co/0qZmftP/caballo-5.jpg" alt="caballo-5" border="0"></a>
+><a href="https://ibb.co/vYwhwrW"><img src="https://i.ibb.co/TLv1vnG/caballo-6.jpg" alt="caballo-6" border="0"></a>
+><a href="https://ibb.co/ynvsYgP"><img src="https://i.ibb.co/WW8KPB5/caballo-7.jpg" alt="caballo-7" border="0"></a>
 
 ### 7. Entregables
 - En el informe siempre se debe agregar un enlace al directorio de su laboratorio en su repositorio Github privado donde se vea est ́e el c ́odigo fuente.

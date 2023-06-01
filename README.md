@@ -103,9 +103,9 @@
 
 - Python es un lenguaje de programaci ́on interpretado no fuertemente tipado.
 
-### 4.2 Instalaci ́on en GNU/Linux
+### 4.2 Instalación en GNU/Linux
 
-- Para instalar Python 3 en cualquier distribuci ́on GNU/Linux use sus mismos repositorios. Por ejemplo en sistemas operativos compatibles con GNU/Linux Debian use alguno de los dos comandos siguientes:
+- Para instalar Python 3 en cualquier distribución GNU/Linux use sus mismos repositorios. Por ejemplo en sistemas operativos compatibles con GNU/Linux Debian use alguno de los dos comandos siguientes:
 
             
                          Listing 1: Instalar Python en GNU/Linux
@@ -117,12 +117,12 @@
 ### 4.3 Instalación en MS Windows
 
 - Para descarga en sistemas MS Windows https://www.python.org/downloads/windows/
-- Descargar e instalar en sistemas operativos MS Windows, por lo general es muy sencillo. Adem ́as si usted es un usuario nativo de windows este proceso ser ́a casi intuitivo. No tenga miedo de instalar estos programas todo es software libre, asi que no necesitar ́a parches o cracks.
+- Descargar e instalar en sistemas operativos MS Windows, por lo general es muy sencillo. Además si usted es un usuario nativo de windows este proceso será casi intuitivo. No tenga miedo de instalar estos programas todo es software libre, asi que no necesitará parches o cracks.
 
 ***Instalación en Windows 10 - 64 bits***
 <a href="https://ibb.co/DRJ9qns"><img src="https://i.ibb.co/G56WhjB/aistalacion.jpg" alt="aistalacion" border="0"></a>
 
-### 4.4 Instalaci ́on en MacOS
+### 4.4 Instalación en MacOS
 
 - Para instalar Python 3 en sistemas MacOS puede descargar el instalador desde urlhttps://www.python.org/downloads/macos/ o usar brew:
 
@@ -134,10 +134,10 @@
 
 ### 4.5 Comprobar versión
 
-- Debe comprobar que la instalaci ́on y el reconocimiento del compilador ya estan presentes en su sistema operativo:
+- Debe comprobar que la instalación y el reconocimiento del compilador ya estan presentes en su sistema operativo:
 
             
-                         Listing 3: Verificando versi ́on de Python
+                         Listing 3: Verificando versión de Python
             
             $ python3 --version
             
@@ -153,7 +153,7 @@
             
 #
             
-                         Listing 5: Dirij ́ıendonos al directorio de ejercicios
+                         Listing 5: Dirijíendonos al directorio de ejercicios
             
             $ cd $HOME/rescobedoq/pw2-lab-c-23a/lab04/exercises
             
@@ -182,15 +182,23 @@
             $ python3 helloworld.py
 
 ***Creando el archivo helloworld.py***
+#
 <a href="https://imgbb.com/"><img src="https://i.ibb.co/mNdb6Mx/aistall-2.jpg" alt="aistall-2" border="0"></a>
 
 ***Ejecutando el script helloworld.py***
+#
 <a href="https://imgbb.com/"><img src="https://i.ibb.co/2y394Jk/aistall-1.jpg" alt="aistall-1" border="0"></a>
-            
+
+***Corriendo nuestro primer ejemplo python ¡Hola Mundo!***      
+<a href="https://ibb.co/BqBXTn1"><img src="https://i.ibb.co/vZk7LXt/python-1.jpg" alt="python-1" border="0"></a>
+
+***Commit para agregar el ejemplo python a nuestro repositorio remoto***
+
+
 ### 4.8 Comentarios en Python
 
 - Los comentarios en Python sólo se aplican por cada línea.
-- Pero usted puede utilizar v ́arias t ́ecnicas para comentar en el editor Vim.
+- Pero usted puede utilizar várias técnicas para comentar en el editor Vim.
 
 
                          Listing 9: Comentar rango de líneas 5-10
@@ -206,8 +214,8 @@
 
 - La reutilización de código fuente (paquetes, librerias, plugins, etc.) de terceros nos permite construir software más complejo, sobre todo con menos tiempo.
 - En NodeJS se usaban paquetes instalados en el directorio de trabajo y no de manera global, registrando estos paquetes en sus versiones en el archivo package.json.
-- Por eso este modo de trabajo nos permite tener distintos proyectos con distintas bibliotecas, de distintas versiones, en la misma m ́aquina, sin que existan conflictos.
-- Para compartir el proyecto se debe compartir el archivo package.json y luego llamar a ”npm install”para instalar las bibliotecas adecuadas para el proyecto.
+- Por eso este modo de trabajo nos permite tener distintos proyectos con distintas bibliotecas, de distintas versiones, en la misma máquina, sin que existan conflictos.
+- Para compartir el proyecto se debe compartir el archivo package.json y luego llamar a ”npm install” para instalar las bibliotecas adecuadas para el proyecto.
 - Java usa ant y maven, junto con archivos xml para realizar estas tareas.
 - Python tiene virtualenv, para crear este espacio de trabajo.
 - Python utiliza el manejador de paquetes pip.
@@ -247,7 +255,7 @@
 
 ### 4.13 Crear un directorio para entorno virtual
 
-- Para crear un ambiente elija en qu ́e directorio se va trabajar con entorno virtual.
+- Para crear un ambiente elija en qué directorio se va trabajar con entorno virtual.
 
 
                          Listing 14: Creando directorio para entorno virtual

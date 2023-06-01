@@ -107,12 +107,12 @@
 
 - Para instalar Python 3 en cualquier distribuci ́on GNU/Linux use sus mismos repositorios. Por ejemplo en sistemas operativos compatibles con GNU/Linux Debian use alguno de los dos comandos siguientes:
 
-            ```sh
+            
                          Listing 1: Instalar Python en GNU/Linux
-            #
+            
             $ sudo apt-get install python3
             # apt-get install python3
-            ```
+            
 
 #### 4.3 Instalaci ́on en MS Windows
 
@@ -123,68 +123,68 @@
 
 - Para instalar Python 3 en sistemas MacOS puede descargar el instalador desde urlhttps://www.python.org/downloads/macos/ o usar brew:
 
-            ```sh
+            
                          Listing 2: Instalar Python en Mac
             #
             $ brew install python
-            ```
+            
 
 #### 4.5 Comprobar versi ́on
 
 - Debe comprobar que la instalaci ́on y el reconocimiento del compilador ya estan presentes en su sistema operativo:
 
-            ```sh
+            
                          Listing 3: Verificando versi ́on de Python
-            #
+            
             $ python3 --version
-            ```
+            
 #### 4.6 Directorio de trabajo
 
 - Cree el directorio para estudiar ejercicios para este laboratorio.
 - Luego, dir ́ıjase a este directorio y desarrolle diferentes ejercicicios de entrenamiento.
 
-            ```sh
+            
                          Listing 4: Creando directorio para ejercicios de este laboratorio
-            #
+            
             $ mkdir -p $HOME/rescobedoq/pw2-lab-c-23a/lab04/exercises
-            ```
+            
 #
-            ```sh
+            
                          Listing 5: Dirij ́ıendonos al directorio de ejercicios
-            #
+            
             $ cd $HOME/rescobedoq/pw2-lab-c-23a/lab04/exercises
-            ```
+            
 
 #### 4.7 Hola mundo
 
 - Cree su primer ejercicio helloworld.py
 
-            ```sh
+            
                          Listing 6: Creando el archivo helloworld.py
-            #
+            
             $ vim helloworld.py
-            ```
+            
 #
-            ```sh
+            
                          Listing 7: helloworld.py
-            #
+            
             print("Hello World!");
-            ```
+            
 
 - Para ejecutar su script helloworld.py ejecute el siguiente comando:
 
-            ```sh
+            
                          Listing 8: Ejecutando el script helloworld.py
-            #
+            
             $ python3 helloworld.py
-            ```
+            
 
 #### 4.15 Estructura de un entorno virtual
 
 - Estudie la estructura del entorno virtual.
 - Dentro del directorio para el entorno virtual se debi ́o crear un subdirectorio src/ con el siguiente contenido:
     
-            ```sh
+            
             .
             ├── bin
             │   ├── activate
@@ -209,7 +209,7 @@
             │   └── python3.9
             ├── pyvenv.cfg
             └── src
-            ```
+            
 ### 5. Ejercicios
 
 #### 5.1 Matriz escalar
@@ -217,9 +217,9 @@
 - Ejercicios sobre matrices de tama ̃no NxN.
 - Determine si una matriz es escalar:
 
-        ```sh
+        
                      Listing 18: esEscalar.py
-        #
+        
         def esEscalar(m):
             d = m[0][0]
             for i in range(len(m)):
@@ -232,13 +232,13 @@
                         print(m[i][j])
                         return False
             return True
-        ```
+        
 
 - Pruebe el m ́etodo esEscalar()
 
-        ```sh
+        
                      Listing 19: testEsEscalar.py
-        #
+        
         import esEscalar as fu
 
         def prueba(M):
@@ -252,27 +252,27 @@
         Z = [[1, 0, 0], [0, 1, 0], [0, 0, 1]]
 
         prueba(Z)
-        ```
+        
 
 #### 5.2 Matriz unitaria
 
 - Ejercicios sobre matrices de tama ̃no NxN.
 - Determine si una matriz es unitaria:
 
-        ```sh
+        
                      Listing 20: esUnitaria.py
-        #
+        
         import esEscalar as fu
 
         def esUnitaria(m):
             return m[0][0] == 1 and fu.esEscalar(m)
-        ```
+        
 
 - Pruebe el m ́etodo esUnitaria()
 
-        ```sh
+        
                      Listing 21: testEsUnitaria.py
-        #
+        
         import esUnitaria as fu
 
         def prueba(M):
@@ -287,7 +287,7 @@
         #Z = [[1, 0, 0], [0, 1, 0], [0, 0, 1]]
 
         prueba(Z)
-        ```
+        
 
 ### 6. Tarea
 
@@ -322,8 +322,8 @@
 - Tenga en cuenta que para implementar todos estos m ́etodos, s ́olo deber ́a trabajar sobre la representaci ́on interna de un Picture, es decir su atributo img.
 - Para dibujar una objeto Picture bastar ́a importar el m ́etodo draw de la biblioteca interpreter y usarlo de la siguiente manera:
 
-***Listing 22: Importando en método draw() de interpreter***
-#
+             Listing 22: Importando en método draw() de interpreter
+
     $ python3
     Python 3.9.2 (default, Feb 28 2021, 17:03:44) 
     [GCC 10.2.1 20210110] on linux
@@ -363,6 +363,8 @@
 
 #
 ### 8. Rúbrica
+
+><a href="https://ibb.co/j5zftCx"><img src="https://i.ibb.co/X4DLHnd/caballo-8.jpg" alt="caballo-8" border="0"></a>
 
 ### 9. Referencias
 
@@ -407,3 +409,7 @@
 [![Last Commit][last-commit]][releases]
 
 ### 10. Observaciones
+
+- Observaciones que se consideran en la calificación.
+
+><a href="https://ibb.co/qWsLL9C"><img src="https://i.ibb.co/KLqcc7D/caballo-9.jpg" alt="caballo-9" border="0"></a>

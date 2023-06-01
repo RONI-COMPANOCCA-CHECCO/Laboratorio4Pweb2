@@ -99,11 +99,11 @@
 -   https://www.w3schools.com/python/python_reference.asp
 -   https://docs.python.org/3/tutorial/
 
-#### 4.1 Python
+### 4.1 Python
 
 - Python es un lenguaje de programaci ́on interpretado no fuertemente tipado.
 
-#### 4.2 Instalaci ́on en GNU/Linux
+### 4.2 Instalaci ́on en GNU/Linux
 
 - Para instalar Python 3 en cualquier distribuci ́on GNU/Linux use sus mismos repositorios. Por ejemplo en sistemas operativos compatibles con GNU/Linux Debian use alguno de los dos comandos siguientes:
 
@@ -114,12 +114,15 @@
             # apt-get install python3
             
 
-#### 4.3 Instalaci ́on en MS Windows
+### 4.3 Instalación en MS Windows
 
 - Para descarga en sistemas MS Windows https://www.python.org/downloads/windows/
 - Descargar e instalar en sistemas operativos MS Windows, por lo general es muy sencillo. Adem ́as si usted es un usuario nativo de windows este proceso ser ́a casi intuitivo. No tenga miedo de instalar estos programas todo es software libre, asi que no necesitar ́a parches o cracks.
 
-#### 4.4 Instalaci ́on en MacOS
+***Instalación en Windows 10 - 64 bits***
+<a href="https://ibb.co/DRJ9qns"><img src="https://i.ibb.co/G56WhjB/aistalacion.jpg" alt="aistalacion" border="0"></a>
+
+### 4.4 Instalaci ́on en MacOS
 
 - Para instalar Python 3 en sistemas MacOS puede descargar el instalador desde urlhttps://www.python.org/downloads/macos/ o usar brew:
 
@@ -129,7 +132,7 @@
             $ brew install python
             
 
-#### 4.5 Comprobar versi ́on
+### 4.5 Comprobar versión
 
 - Debe comprobar que la instalaci ́on y el reconocimiento del compilador ya estan presentes en su sistema operativo:
 
@@ -138,7 +141,7 @@
             
             $ python3 --version
             
-#### 4.6 Directorio de trabajo
+### 4.6 Directorio de trabajo
 
 - Cree el directorio para estudiar ejercicios para este laboratorio.
 - Luego, dir ́ıjase a este directorio y desarrolle diferentes ejercicicios de entrenamiento.
@@ -155,7 +158,7 @@
             $ cd $HOME/rescobedoq/pw2-lab-c-23a/lab04/exercises
             
 
-#### 4.7 Hola mundo
+### 4.7 Hola mundo
 
 - Cree su primer ejercicio helloworld.py
 
@@ -177,8 +180,14 @@
                          Listing 8: Ejecutando el script helloworld.py
             
             $ python3 helloworld.py
+
+***Creando el archivo helloworld.py***
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/mNdb6Mx/aistall-2.jpg" alt="aistall-2" border="0"></a>
+
+***Ejecutando el script helloworld.py***
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/2y394Jk/aistall-1.jpg" alt="aistall-1" border="0"></a>
             
-#### 4.8 Comentarios en Python
+### 4.8 Comentarios en Python
 
 - Los comentarios en Python sólo se aplican por cada línea.
 - Pero usted puede utilizar v ́arias t ́ecnicas para comentar en el editor Vim.
@@ -193,7 +202,7 @@
 
             :g/print/s/^/#
 
-#### 4.9 Virtual Environment
+### 4.9 Virtual Environment
 
 - La reutilización de código fuente (paquetes, librerias, plugins, etc.) de terceros nos permite construir software más complejo, sobre todo con menos tiempo.
 - En NodeJS se usaban paquetes instalados en el directorio de trabajo y no de manera global, registrando estos paquetes en sus versiones en el archivo package.json.
@@ -203,7 +212,7 @@
 - Python tiene virtualenv, para crear este espacio de trabajo.
 - Python utiliza el manejador de paquetes pip.
 
-#### 4.10 Pip
+### 4.10 Pip
 
 - Instalemos pip, una herramienta que instalará y administrará los paquetes de programación que queramos usar en nuestros proyectos de desarrollo.
 
@@ -212,7 +221,7 @@
 
             $ sudo apt-get install -y python3-pip
 
-#### 4.11 Garantizando configuraci ́on para entorno virtual
+### 4.11 Garantizando configuraci ́on para entorno virtual
 
 - Paquetes y herramientas de desarrollo más para instalar para garantizar que tengamos una configuración sólida para nuestro entorno de programación.
 
@@ -221,7 +230,7 @@
 
             $ sudo apt-get install build-essential libssl-dev libffi-dev python3-dev
 
-#### 4.12 Configurando entorno virtual
+### 4.12 Configurando entorno virtual
 
 - Los entornos virtuales permiten tener un espacio aislado en los proyectos Python
 - Garantizando que cada proyecto pueda tener su propio conjunto de dependencias que no interrumpir ́an a otros proyectos.
@@ -236,7 +245,7 @@
 
             $ sudo apt install -y python3-venv
 
-#### 4.13 Crear un directorio para entorno virtual
+### 4.13 Crear un directorio para entorno virtual
 
 - Para crear un ambiente elija en qu ́e directorio se va trabajar con entorno virtual.
 
@@ -245,7 +254,7 @@
 
             $ mkdir -p $HOME/rescobedoq/pw2-lab-c-23a/lab04/exercises/my_env
 
-#### 4.14 Crear entorno virtual en un directorio
+### 4.14 Crear entorno virtual en un directorio
 
 - En el directorio crea un entorno virtual ejecutando el siguiente comando:
 
@@ -255,7 +264,7 @@
             $ cd $HOME/rescobedoq/pw2-lab-c-23a/lab04/exercises/my_env
             $ virtualenv -p python3 .
 
-#### 4.15 Estructura de un entorno virtual
+### 4.15 Estructura de un entorno virtual
 
 - Estudie la estructura del entorno virtual.
 - Dentro del directorio para el entorno virtual se debi ́o crear un subdirectorio src/ con el siguiente contenido:
@@ -286,9 +295,9 @@
             ├── pyvenv.cfg
             └── src
             
-### 5. Ejercicios
+## 5. Ejercicios
 
-#### 5.1 Matriz escalar
+### 5.1 Matriz escalar
 
 - Ejercicios sobre matrices de tama ̃no NxN.
 - Determine si una matriz es escalar:
@@ -330,7 +339,7 @@
         prueba(Z)
         
 
-#### 5.2 Matriz unitaria
+### 5.2 Matriz unitaria
 
 - Ejercicios sobre matrices de tama ̃no NxN.
 - Determine si una matriz es unitaria:
@@ -365,7 +374,7 @@
         prueba(Z)
         
 
-### 6. Tarea
+## 6. Tarea
 
 - En esta tarea usted pondr ́a en pr ́actica sus conocimientos de programaci ́on en Python para dibujar un tablero de Ajedrez.
 - La parte gráfica ya est ́a programada, usted sólo tendr ́a que concentrarse en las estructuras de datos subyacentes.
@@ -425,24 +434,24 @@
 <a href="https://ibb.co/vYwhwrW"><img src="https://i.ibb.co/TLv1vnG/caballo-6.jpg" alt="caballo-6" border="0"></a>
 <a href="https://ibb.co/ynvsYgP"><img src="https://i.ibb.co/WW8KPB5/caballo-7.jpg" alt="caballo-7" border="0"></a>
 
-### 7. Entregables
+## 7. Entregables
 - En el informe siempre se debe agregar un enlace al directorio de su laboratorio en su repositorio Github privado donde se vea est ́e el c ́odigo fuente.
 - No olvide que el profesor debe ser siempre colaborador a su repositorio (Usuario del profesor @rescobedoq).
 - Para ser considerado con la calificaci ́on de m ́axima nota elab ́orelo en Latex.
 - Usted debe describir los commits m ́as importantes que marcaron hitos en su trabajo, adjutando capturas de pantalla, del commit, del c ́odigo fuente, de sus ejecuciones y pruebas.
 - En el informe siempre se debe explicar las im ́agenes (c ́odigo fuente, capturas de pantalla, commits, ejecuciones, pruebas, etc.) con descripciones puntuales pero precisas.
-#### Cuestionario
+### Cuestionario
 
 -   ¿Qué son los archivos *.pyc?
 -   ¿Para qué sirve el directorio __pycache__?
 -   ¿Cuáles son los usos y lo que representa el subguión en Python?
 
 #
-### 8. Rúbrica
+## 8. Rúbrica
 
 <a href="https://ibb.co/j5zftCx"><img src="https://i.ibb.co/X4DLHnd/caballo-8.jpg" alt="caballo-8" border="0"></a>
 
-### 9. Referencias
+## 9. Referencias
 
 -   https://www.w3schools.com/python/python_reference.asp
 -   https://docs.python.org/3/tutorial/
@@ -484,7 +493,7 @@
 [![Downloads][downloads]][releases]
 [![Last Commit][last-commit]][releases]
 
-### 10. Observaciones
+## 10. Observaciones
 
 - Observaciones que se consideran en la calificación.
 

@@ -321,21 +321,19 @@
 - Tenga en cuenta que para implementar todos estos m ́etodos, s ́olo deber ́a trabajar sobre la representaci ́on interna de un Picture, es decir su atributo img.
 - Para dibujar una objeto Picture bastar ́a importar el m ́etodo draw de la biblioteca interpreter y usarlo de la siguiente manera:
 
-    ```sh
+    
              Listing 22: Importando en m ́etodo draw() de interpreter
-    #
+#
     $ python3
     Python 3.9.2 (default, Feb 28 2021, 17:03:44) 
     [GCC 10.2.1 20210110] on linux
     Type "help", "copyright", "credits" or "license" for more information.
-    ```
-    ```sh
+
     >>> from chessPictures import *
     >>> from interpreter import draw
     pygame 1.9.6
     Hello from the pygame community. https://www.pygame.org/contribute.html
     >>> draw(rock)
-    ```
 
 ### 7. Entregables
 - En el informe siempre se debe agregar un enlace al directorio de su laboratorio en su repositorio Github privado donde se vea est ́e el c ́odigo fuente.

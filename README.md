@@ -210,6 +210,13 @@
 
             :g/print/s/^/#
 
+***Comentarios en python***
+#
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/z4pLQD6/aimag1.jpg" alt="aimag1" border="0"></a>
+
+***Commit para ir guardando los cambios de los comentarios***
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/Wt2qDqc/aimag2.jpg" alt="aimag2" border="0"></a>
+
 ### 4.9 Virtual Environment
 
 - La reutilización de código fuente (paquetes, librerias, plugins, etc.) de terceros nos permite construir software más complejo, sobre todo con menos tiempo.

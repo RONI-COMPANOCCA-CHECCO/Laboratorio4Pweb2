@@ -94,16 +94,58 @@
 - Cuenta en Github con el correo institucional.
 - Entorno virtual.
 
-## 4. MARCO CONCEPTUAL
+## 4. Directorio de trabajo
+
+- Cree su directorio de trabajo.
+- Luego, diríjase a este directorio, para clonar su repositorio y continuar sus practicas.
+
+
+                         Listing 1: Creando directorio de trabajo
+
+            $ mkdir -p $HOME/rescobedoq/
+
+
+                         Listing 2: Dirij ́ıendonos al directorio de trabajo
+
+            $ cd $HOME/rescobedoq/
+
+
+                         Listing 3: Clonando repositorio GitHub
+
+            $ git clone [URL_DE_SU_GITHUB_PRIVADO]
+
+
+                         Listing 4: Creando directorio para laboratorio
+
+            $ mkdir -p $HOME/rescobedoq/pw2-lab-c-23a/lab04/exercises/
+
+- Siempre evalue utilizar un archivo .gitignore para no considerar algunos archivo innecesarios sobre todo para el repositorio GitHub.
+- Pueden haber varios de estos archivos, ubicados estrat ́egicamente, por ejemplo sólo para un laboratorio particular.
+
+
+                         Listing 5: Creando .gitignore
+   
+            $ vim $HOME/rescobedoq/pw2-lab-c-23a/lab04/.gitignore
+
+
+                         Listing 6: Ejemplo de .gitignore
+
+            my_env/bin/*
+            my_env/lib/*
+            my_env/src/__pycache__/*
+            *.pyc
+            Tarea-del-Ajedrez/__pycache__/*
+
+## 5. Marco teórico
 
 -   https://www.w3schools.com/python/python_reference.asp
 -   https://docs.python.org/3/tutorial/
 
-### 4.1 Python
+### 5.1 Python
 
 - Python es un lenguaje de programaci ́on interpretado no fuertemente tipado.
 
-### 4.2 Instalación en GNU/Linux
+### 5.2 Instalación en GNU/Linux
 
 - Para instalar Python 3 en cualquier distribución GNU/Linux use sus mismos repositorios. Por ejemplo en sistemas operativos compatibles con GNU/Linux Debian use alguno de los dos comandos siguientes:
 
@@ -114,7 +156,7 @@
             # apt-get install python3
             
 
-### 4.3 Instalación en MS Windows
+### 5.3 Instalación en MS Windows
 
 - Para descarga en sistemas MS Windows https://www.python.org/downloads/windows/
 - Descargar e instalar en sistemas operativos MS Windows, por lo general es muy sencillo. Además si usted es un usuario nativo de windows este proceso será casi intuitivo. No tenga miedo de instalar estos programas todo es software libre, asi que no necesitará parches o cracks.
@@ -122,7 +164,7 @@
 ***Instalación en Windows 10 - 64 bits***
 <a href="https://ibb.co/DRJ9qns"><img src="https://i.ibb.co/G56WhjB/aistalacion.jpg" alt="aistalacion" border="0"></a>
 
-### 4.4 Instalación en MacOS
+### 5.4 Instalación en MacOS
 
 - Para instalar Python 3 en sistemas MacOS puede descargar el instalador desde urlhttps://www.python.org/downloads/macos/ o usar brew:
 
@@ -132,7 +174,7 @@
             $ brew install python
             
 
-### 4.5 Comprobar versión
+### 5.5 Comprobar versión
 
 - Debe comprobar que la instalación y el reconocimiento del compilador ya estan presentes en su sistema operativo:
 
@@ -140,8 +182,12 @@
                          Listing 3: Verificando versión de Python
             
             $ python3 --version
+
+***Versión***
+#
+<a href="https://ibb.co/TYnbh1F"><img src="https://i.ibb.co/0mWFJKd/tabla-1.jpg" alt="tabla-1" border="0"></a>
             
-### 4.6 Directorio de trabajo
+### 5.6 Directorio de trabajo
 
 - Cree el directorio para estudiar ejercicios para este laboratorio.
 - Luego, dir ́ıjase a este directorio y desarrolle diferentes ejercicicios de entrenamiento.
@@ -157,8 +203,9 @@
             
             $ cd $HOME/rescobedoq/pw2-lab-c-23a/lab04/exercises
             
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/KLwhvDN/tabla-2.jpg" alt="tabla-2" border="0"></a>
 
-### 4.7 Hola mundo
+### 5.7 Hola mundo
 
 - Cree su primer ejercicio helloworld.py
 
@@ -195,7 +242,7 @@
 ***Commit para agregar el ejemplo python a nuestro repositorio remoto***
 <a href="https://ibb.co/HNZB3MT"><img src="https://i.ibb.co/28JWHL3/python-3.jpg" alt="python-3" border="0"></a>
 
-### 4.8 Comentarios en Python
+### 5.8 Comentarios en Python
 
 - Los comentarios en Python sólo se aplican por cada línea.
 - Pero usted puede utilizar várias técnicas para comentar en el editor Vim.
@@ -217,7 +264,7 @@
 ***Commit para ir guardando los cambios de los comentarios***
 <a href="https://imgbb.com/"><img src="https://i.ibb.co/Wt2qDqc/aimag2.jpg" alt="aimag2" border="0"></a>
 
-### 4.9 Virtual Environment
+### 5.9 Virtual Environment
 
 - La reutilización de código fuente (paquetes, librerias, plugins, etc.) de terceros nos permite construir software más complejo, sobre todo con menos tiempo.
 - En NodeJS se usaban paquetes instalados en el directorio de trabajo y no de manera global, registrando estos paquetes en sus versiones en el archivo package.json.
@@ -227,7 +274,7 @@
 - Python tiene virtualenv, para crear este espacio de trabajo.
 - Python utiliza el manejador de paquetes pip.
 
-### 4.10 Pip
+### 5.10 Pip
 
 - Instalemos pip, una herramienta que instalará y administrará los paquetes de programación que queramos usar en nuestros proyectos de desarrollo.
 
@@ -236,7 +283,7 @@
 
             $ sudo apt-get install -y python3-pip
 
-### 4.11 Garantizando configuraci ́on para entorno virtual
+### 5.11 Garantizando configuraci ́on para entorno virtual
 
 - Paquetes y herramientas de desarrollo más para instalar para garantizar que tengamos una configuración sólida para nuestro entorno de programación.
 
@@ -245,7 +292,7 @@
 
             $ sudo apt-get install build-essential libssl-dev libffi-dev python3-dev
 
-### 4.12 Configurando entorno virtual
+### 5.12 Configurando entorno virtual
 
 - Los entornos virtuales permiten tener un espacio aislado en los proyectos Python
 - Garantizando que cada proyecto pueda tener su propio conjunto de dependencias que no interrumpir ́an a otros proyectos.
@@ -260,7 +307,7 @@
 
             $ sudo apt install -y python3-venv
 
-### 4.13 Crear un directorio para entorno virtual
+### 5.13 Crear un directorio para entorno virtual
 
 - Para crear un ambiente elija en qué directorio se va trabajar con entorno virtual.
 
@@ -269,7 +316,7 @@
 
             $ mkdir -p $HOME/rescobedoq/pw2-lab-c-23a/lab04/exercises/my_env
 
-### 4.14 Crear entorno virtual en un directorio
+### 5.14 Crear entorno virtual en un directorio
 
 - En el directorio crea un entorno virtual ejecutando el siguiente comando:
 
@@ -279,7 +326,7 @@
             $ cd $HOME/rescobedoq/pw2-lab-c-23a/lab04/exercises/my_env
             $ virtualenv -p python3 .
 
-### 4.15 Estructura de un entorno virtual
+### 5.15 Estructura de un entorno virtual
 
 - Estudie la estructura del entorno virtual.
 - Dentro del directorio para el entorno virtual se debi ́o crear un subdirectorio src/ con el siguiente contenido:
@@ -310,9 +357,9 @@
             ├── pyvenv.cfg
             └── src
             
-## 5. Ejercicios
+## 6. Ejercicios
 
-### 5.1 Matriz escalar
+### 6.1 Matriz escalar
 
 - Ejercicios sobre matrices de tama ̃no NxN.
 - Determine si una matriz es escalar:
@@ -354,7 +401,7 @@
         prueba(Z)
         
 
-### 5.2 Matriz unitaria
+### 6.2 Matriz unitaria
 
 - Ejercicios sobre matrices de tama ̃no NxN.
 - Determine si una matriz es unitaria:
@@ -389,7 +436,7 @@
         prueba(Z)
         
 
-## 6. Tarea
+## 7. Tarea
 
 - En esta tarea usted pondr ́a en pr ́actica sus conocimientos de programaci ́on en Python para dibujar un tablero de Ajedrez.
 - La parte gráfica ya est ́a programada, usted sólo tendr ́a que concentrarse en las estructuras de datos subyacentes.
@@ -449,12 +496,14 @@
 <a href="https://ibb.co/vYwhwrW"><img src="https://i.ibb.co/TLv1vnG/caballo-6.jpg" alt="caballo-6" border="0"></a>
 <a href="https://ibb.co/ynvsYgP"><img src="https://i.ibb.co/WW8KPB5/caballo-7.jpg" alt="caballo-7" border="0"></a>
 
-## 7. Entregables
+## 8. Entregables
+
 - En el informe siempre se debe agregar un enlace al directorio de su laboratorio en su repositorio Github privado donde se vea est ́e el c ́odigo fuente.
 - No olvide que el profesor debe ser siempre colaborador a su repositorio (Usuario del profesor @rescobedoq).
 - Para ser considerado con la calificaci ́on de m ́axima nota elab ́orelo en Latex.
 - Usted debe describir los commits m ́as importantes que marcaron hitos en su trabajo, adjutando capturas de pantalla, del commit, del c ́odigo fuente, de sus ejecuciones y pruebas.
 - En el informe siempre se debe explicar las im ́agenes (c ́odigo fuente, capturas de pantalla, commits, ejecuciones, pruebas, etc.) con descripciones puntuales pero precisas.
+
 ### Cuestionario
 
 -   ¿Qué son los archivos *.pyc?
@@ -462,11 +511,28 @@
 -   ¿Cuáles son los usos y lo que representa el subguión en Python?
 
 #
-## 8. Rúbrica
+## 9. Rúbrica
 
-<a href="https://ibb.co/j5zftCx"><img src="https://i.ibb.co/X4DLHnd/caballo-8.jpg" alt="caballo-8" border="0"></a>
+### 9.1. Rúbrica para entregable Informe
 
-## 9. Referencias
+   - Tabla 1: Rúbrica para tipo de Informe
+<a href="https://ibb.co/MGDbC9d"><img src="https://i.ibb.co/CM5qHWL/tabla-3.jpg" alt="tabla-3" border="0"></a>
+
+### 9.2. Rúbrica para el contenido del Informe y demostración
+
+- El alumno debe marcar o dejar en blanco en celdas de la columna Checklist si cumplio con el ítem correspondiente.
+- Si un alumno supera la fecha de entrega, su calificaci ́on ser ́a sobre la nota m ́ınima aprobada, siempre y cuando cumpla con todos lo items.
+- El alumno debe autocalificarse en la columna Estudiante de acuerdo a la siguiente tabla:
+
+    - Tabla 2: Niveles de desempeño
+
+<a href="https://ibb.co/jzD7QzQ"><img src="https://i.ibb.co/vhk2ThT/tabla-4.jpg" alt="tabla-4" border="0"></a>
+
+    - Tabla 3: Rúbrica para contenido del Informe y demostración
+
+<a href="https://ibb.co/bb9PQfM"><img src="https://i.ibb.co/8YZ0NhL/tabla-5.jpg" alt="tabla-5" border="0"></a>
+
+## 10. Referencias
 
 -   https://www.w3schools.com/python/python_reference.asp
 -   https://docs.python.org/3/tutorial/
@@ -507,9 +573,3 @@
 [![License][license]][license-file]
 [![Downloads][downloads]][releases]
 [![Last Commit][last-commit]][releases]
-
-## 10. Observaciones
-
-- Observaciones que se consideran en la calificación.
-
-<a href="https://ibb.co/qWsLL9C"><img src="https://i.ibb.co/KLqcc7D/caballo-9.jpg" alt="caballo-9" border="0"></a>

@@ -399,12 +399,17 @@
         Z = [[1, 0, 0], [0, 1, 0], [0, 0, 1]]
 
         prueba(Z)
-        
+
+***MATRIZ ESCALAR***   
 <a href="https://imgbb.com/"><img src="https://i.ibb.co/vc9MDxR/aescalar.jpg" alt="aescalar" border="0"></a>
 
 #
-
+***COMPROBANDO LAS MATRICES***
 <a href="https://imgbb.com/"><img src="https://i.ibb.co/yWfB1Tk/aescalar1.jpg" alt="aescalar1" border="0"></a>
+
+#
+***Commit para subir las matrices al repositorio remoto***
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/h7dW3Yr/acommit.jpg" alt="acommit" border="0"></a>
 
 ### 6.2 Matriz unitaria
 
@@ -440,11 +445,16 @@
 
         prueba(Z)
         
+***MATRIZ UNITARIA***
 <a href="https://imgbb.com/"><img src="https://i.ibb.co/QrvTTLZ/aunitario.jpg" alt="aunitario" border="0"></a>
 
 #
-
+***COMPROBANDO LAS MATRICES***
 <a href="https://imgbb.com/"><img src="https://i.ibb.co/74fc8RQ/aunitario1.jpg" alt="aunitario1" border="0"></a>
+
+#
+***Commit para subir las matrices al repositorio remoto***
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/w43FJnC/acommit1.jpg" alt="acommit1" border="0"></a>
 
 ## 7. Tarea
 

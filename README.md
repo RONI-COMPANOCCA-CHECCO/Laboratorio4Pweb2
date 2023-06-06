@@ -401,10 +401,12 @@
         prueba(Z)
 
 ***MATRIZ ESCALAR***   
+
 <a href="https://imgbb.com/"><img src="https://i.ibb.co/vc9MDxR/aescalar.jpg" alt="aescalar" border="0"></a>
 
 #
 ***COMPROBANDO LAS MATRICES***
+
 <a href="https://imgbb.com/"><img src="https://i.ibb.co/yWfB1Tk/aescalar1.jpg" alt="aescalar1" border="0"></a>
 
 #
@@ -425,7 +427,7 @@
             return m[0][0] == 1 and fu.esEscalar(m)
         
 
-- Pruebe el m ́etodo esUnitaria()
+- Pruebe el método esUnitaria()
 
         
                      Listing 21: testEsUnitaria.py
@@ -446,10 +448,12 @@
         prueba(Z)
         
 ***MATRIZ UNITARIA***
+
 <a href="https://imgbb.com/"><img src="https://i.ibb.co/QrvTTLZ/aunitario.jpg" alt="aunitario" border="0"></a>
 
 #
 ***COMPROBANDO LAS MATRICES***
+
 <a href="https://imgbb.com/"><img src="https://i.ibb.co/74fc8RQ/aunitario1.jpg" alt="aunitario1" border="0"></a>
 
 #
@@ -508,13 +512,16 @@
       • Para resolver los siguientes ejercicios s ́olo est ́a permitido usar ciclos, condicionales, definici ́on de listas por comprensi ́on, sublistas, map, join, (+), lambda, zip, append, pop, range.
       • Implemente los m ́etodos de la clase Picture. Se recomienda que implemente la clase picture por etapas, probando realizar los dibujos que se muestran en la siguiente preguntas.
       • Usando  ́unicamente los m ́etodos de los objetos de la clase Picture dibuje las siguientes figuras (invoque a draw):
-- Pregunta: Explique el directorio pycache. 
 
 <a href="https://ibb.co/N7cZ0Y2"><img src="https://i.ibb.co/1bF8C2G/caballo-3.jpg" alt="caballo-3" border="0"></a>
 <a href="https://ibb.co/TPMbgbX"><img src="https://i.ibb.co/P1G969p/caballo-4.jpg" alt="caballo-4" border="0"></a>
 <a href="https://ibb.co/v1mVJY2"><img src="https://i.ibb.co/0qZmftP/caballo-5.jpg" alt="caballo-5" border="0"></a>
 <a href="https://ibb.co/vYwhwrW"><img src="https://i.ibb.co/TLv1vnG/caballo-6.jpg" alt="caballo-6" border="0"></a>
 <a href="https://ibb.co/ynvsYgP"><img src="https://i.ibb.co/WW8KPB5/caballo-7.jpg" alt="caballo-7" border="0"></a>
+
+- Pregunta: Explique el directorio pycache. 
+
+es un directorio que contiene archivos de caché de código de bytes que son generados automáticamente por Python, y asi de esta forma evitar que todos estos nuevos archivos abarroten los directorios de origen, y ahora los archivos pyc se recopilan en un directorio <__pycache__>. 
 
 ## 8. Entregables
 
@@ -527,8 +534,16 @@
 ### Cuestionario
 
 -   ¿Qué son los archivos *.pyc?
+
+cuando el programador importa un módulo, también crea una versión compilada, o "ya interpretado", de ese módulo, que tiene una extensión "pyc.". Esto significa que después de la primera ejecución, el programa Python utilizará el .pyc compilado al importar.
+
 -   ¿Para qué sirve el directorio __pycache__?
+
+es un directorio que contiene archivos de caché de código de bytes que son generados automáticamente por Python, es decir, Python compilado .pyc archivos. 
+
 -   ¿Cuáles son los usos y lo que representa el subguión en Python?
+
+ El guión bajo se usa principalmente como modificador de acceso, también se utiliza para declarar los constructores.
 
 #
 ## 9. Rúbrica

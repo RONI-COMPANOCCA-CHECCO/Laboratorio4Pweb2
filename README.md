@@ -400,6 +400,11 @@
 
         prueba(Z)
         
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/vc9MDxR/aescalar.jpg" alt="aescalar" border="0"></a>
+
+#
+
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/yWfB1Tk/aescalar1.jpg" alt="aescalar1" border="0"></a>
 
 ### 6.2 Matriz unitaria
 
@@ -435,6 +440,11 @@
 
         prueba(Z)
         
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/QrvTTLZ/aunitario.jpg" alt="aunitario" border="0"></a>
+
+#
+
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/74fc8RQ/aunitario1.jpg" alt="aunitario1" border="0"></a>
 
 ## 7. Tarea
 

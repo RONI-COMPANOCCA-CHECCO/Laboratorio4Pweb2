@@ -519,6 +519,24 @@
 <a href="https://ibb.co/vYwhwrW"><img src="https://i.ibb.co/TLv1vnG/caballo-6.jpg" alt="caballo-6" border="0"></a>
 <a href="https://ibb.co/ynvsYgP"><img src="https://i.ibb.co/WW8KPB5/caballo-7.jpg" alt="caballo-7" border="0"></a>
 
+#
+***IMAGEN PARTE 1 TAREA***
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/WB6kT8M/ajedrez1.jpg" alt="ajedrez1" border="0"></a>
+
+#
+***IMAGEN PARTE 2 TAREA***
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/gSwjMjT/ajedrez2.jpg" alt="ajedrez2" border="0"></a>
+
+#
+***IMAGEN PARTE 3 TAREA***
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/R0tdNBS/ajedrez3.jpg" alt="ajedrez3" border="0"></a>
+
+#
+***IMAGEN PARTE 4 TAREA***
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/L9gLW6j/ajedrez4.jpg" alt="ajedrez4" border="0"></a>
+
+#
+
 - Pregunta: Explique el directorio pycache. 
 
 es un directorio que contiene archivos de caché de código de bytes que son generados automáticamente por Python, y asi de esta forma evitar que todos estos nuevos archivos abarroten los directorios de origen, y ahora los archivos pyc se recopilan en un directorio __pycache__. 

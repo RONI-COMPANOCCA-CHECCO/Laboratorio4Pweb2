@@ -521,7 +521,7 @@
 
 - Pregunta: Explique el directorio pycache. 
 
-es un directorio que contiene archivos de caché de código de bytes que son generados automáticamente por Python, y asi de esta forma evitar que todos estos nuevos archivos abarroten los directorios de origen, y ahora los archivos pyc se recopilan en un directorio <__pycache__>. 
+es un directorio que contiene archivos de caché de código de bytes que son generados automáticamente por Python, y asi de esta forma evitar que todos estos nuevos archivos abarroten los directorios de origen, y ahora los archivos pyc se recopilan en un directorio __pycache__. 
 
 ## 8. Entregables
 
